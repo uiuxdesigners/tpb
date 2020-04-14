@@ -1,5 +1,5 @@
 var cookies=document.cookie.split(";");for(var i=0;i<cookies.length;i++){var cookie=cookies[i];var eqPos=cookie.indexOf("=");var name=eqPos>-1?cookie.substr(0,eqPos):cookie;document.cookie=name+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";}
-var server='https://api.apibay.gq';var static_server='https://torrindex.net';function jswarnclear(){document.getElementById("jscrwarn").innerHTML='';document.getElementById("jscrwarn2").innerHTML='';}
+var server='https://api.thepiratebay.workers.dev';var static_server='https://torrindex.net';function jswarnclear(){document.getElementById("jscrwarn").innerHTML='';document.getElementById("jscrwarn2").innerHTML='';}
 function Get(yourUrl){var Httpreq=new XMLHttpRequest();Httpreq.open("GET",yourUrl,false);Httpreq.send(null);return Httpreq.responseText;}
 function print_magnet(ih,name){return '<a href="magnet:?xt=urn:btih:'+ih+'&dn='+encodeURIComponent(name)+print_trackers()+'"><img src="'+static_server+'/images/icon-magnet.gif" /></a>';}
 function print_download(ih,name){return '<a href="magnet:?xt=urn:btih:'+ih+'&dn='+encodeURIComponent(name)+print_trackers()+'"><img src="'+static_server+'/images/icon-magnet.gif" /> Get This Torrent</a>';}
