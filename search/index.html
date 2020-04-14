@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,45 +14,7 @@
 <b><font color="RED"><label id="jscrwarn">Enable JS in your browser!</label></font></b>
 <script>document.getElementById("jscrwarn").innerHTML='';</script>
 <b><font color="RED"><label id="jscrwarn2">Your adblock may block important javascript components, check that main.js is loaded or the webpage won't work.</label></font></b>
-<h1><label id="tlt"></label></h1>
-<div class="adblock" id="ad-top">
-<div class="ad728 align-center">
-<script type="application/javascript">
-    var ad_idzone = "442644",
-    ad_width = "728",
-    ad_height = "90"
-</script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=442644&output=noscript&type=728x90" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
-</div>
-<div class="ad468 align-center">
-<script type="application/javascript">
-    var ad_idzone = "442646",
-    ad_width = "468",
-    ad_height = "60"
-</script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=442646&output=noscript&type=468x60" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
-</div>
-<div class="ad234 align-center">
-</div>
-</div>
 <div class="browse">
-<section class="col-left ad120">
-<script type="application/javascript">
-    var ad_idzone = "442638",
-    ad_width = "120",
-    ad_height = "600"
-</script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=442638&output=noscript&type=120x600" width="120" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
-</section>
 <section class="col-center">
 <ol id="torrents" class="view-single">
 <li class="list-header">
@@ -69,42 +30,6 @@
 <script>if (typeof make_search !== "undefined" ) make_search();</script>
 </ol>
 </section>
- <section class="col-right ad120">
-<script type="application/javascript">
-    var ad_idzone = "442638",
-    ad_width = "120",
-    ad_height = "600"
-</script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=442638&output=noscript&type=120x600" width="120" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
-</section>
-</div>
-<div class="adblock" id="ad-bottom">
-<div class="ad728 align-center">
-<script type="application/javascript">
-    var ad_idzone = "442644",
-    ad_width = "728",
-    ad_height = "90"
-</script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=442644&output=noscript&type=728x90" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
-</div>
-<div class="ad468 align-center">
-<script type="application/javascript">
-    var ad_idzone = "442646",
-    ad_width = "468",
-    ad_height = "60"
-</script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=442646&output=noscript&type=468x60" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
-</div>
-<div class="ad234 align-center">
 </div>
 </div>
 </main>
@@ -112,12 +37,12 @@
 <section class="col-left" id="logo"><a href="/index.html"><img src="https://torrindex.net/images/tpbsmall_notext.jpg" alt="The Pirate Bay"></a></section>
 <section class="col-center">
 <nav>
-<a href="/index.html" title="Search Torrents"><strong>Search&nbsp;Torrents</strong></a> |
-<a href="/browse.php" title="Browse Torrents">Browse&nbsp;Torrents</a> |
-<a href="/search.php?q=top100:recent" title="Recent Torrent">Recent&nbsp;Torrents</a> |
-<a href="/top.php" title="Top 100">Top&nbsp;100</a>
+<a href="/" title="Search Torrents"><strong>Search&nbsp;Torrents</strong></a> |
+<a href="/browse" title="Browse Torrents">Browse&nbsp;Torrents</a> |
+<a href="/search?q=top100:recent" title="Recent Torrent">Recent&nbsp;Torrents</a> |
+<a href="/top" title="Top 100">Top&nbsp;100</a>
 </nav>
-<form action="/search.php">
+<form action="/search">
 <input type="search" title="Pirate Search" name="q" placeholder="Search here..." id="search">
 <script>
 			document.getElementById("search").value = getParameterByName('q');
